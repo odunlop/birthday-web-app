@@ -5,13 +5,13 @@ class BirthdayChecker
   attr_reader :day, :month
 
   def initialize(day, month)
-    @day = day
+    @day = day.to_i
     @month = month
     @year = Time.now.year
     @today = Date.new(Time.now.year, Time.now.month, Time.now.day)
   end
 
-  def birthday?
+  def today?
     Time.now.month == self.month && Time.now.day == self.day
   end
 
@@ -19,7 +19,7 @@ class BirthdayChecker
     month_to_integer
     @year += 1 if @month <= Time.now.month
     birthday = Date.new(@year, @month, @day)
-    birthday - @today
+    (birthday - @today).to_i
   end
 
   private

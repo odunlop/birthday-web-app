@@ -14,7 +14,7 @@ describe BirthdayChecker do
 
   it "can check if it's the user's birthday" do
     test = BirthdayChecker.new(6, "February")
-    expect(test).not_to be_birthday
+    expect(test).not_to be_today
   end
 
   it "can calculate how many days until the user's next birthday" do
