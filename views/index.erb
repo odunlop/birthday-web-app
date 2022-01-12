@@ -13,10 +13,34 @@
    <body style="background-color:#D1F2EB;">
       <h1 style="font-size:4vw">Hello!</h1>
       <p style="font-size:2vw"> Tell me about yourself </p>
-      <p><i> Name </i></p>
-      <p>[EMPTY BOX]</p>
-      <p><i> When  is your birthday? </i></p>
-      <p> [DROP DOWNS FOR MONTH AND DAY] </p>
+      <form action="/birthday" method="post">
+         <p><label for="name">Name</label></br></p>
+         <p><input type="text" id="name" name="first_name"></p>
+
+         <p><i> When  is your birthday? </i></p>
+         <p><select name ="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+         </select>
+         <select name ="month" id="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+            </select></p>
+         <input type="submit" value="Submit">
    </body>
    </center>
 </html>

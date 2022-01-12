@@ -19,6 +19,6 @@ describe BirthdayChecker do
 
   it "can calculate how many days until the user's next birthday" do
     test = BirthdayChecker.new(6, "January")
-    expect(test.days_left).to eq 360
+    expect(test.days_left).to eq 359
   end
 end

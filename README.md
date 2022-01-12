@@ -1,9 +1,11 @@
 # Birthday Checker
 
+```
 As a user
 So that I can see how long it is until my birthday
 I want to complete a form
 And see the number of days left
+```
 
 ## Set up
 - Install dependencies 

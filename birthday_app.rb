@@ -1,9 +1,14 @@
 require "sinatra"
+require "sinatra/base"
 require "sinatra/reloader" if development?
 
-get '/' do
-  "Test screen"
-end
-get '/birthday' do 
-  erb(:index)
+class DayCount < Sinatra::Base
+  get '/' do
+    erb(:index)
+  end
+  post '/birthday' do 
+
+  end
+  
+  run! if app_file == $0
 end
