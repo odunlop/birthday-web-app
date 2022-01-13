@@ -1,1 +1,27 @@
-<%=@name%> - there are <%=@days_left%> days left until your birthday
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"
+    <title></title>
+        <title> Birthday Tracker </title>
+        <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="container">
+      <div class="menu">
+      <ul>
+        <li><a href="/" class="home-btn"><span> Home </span></a></li>
+      </ul>
+    </div>
+        <center>
+        <div>
+          <div class="app-text">
+          <% if @birthday.today? == true %>
+          <h1>Congrats <%=@name%>! It's your birthday today!</h1>
+          <% else %>
+          <h1><%=@name%> - there are <font color="#fd00da";><%=@days_left%></font> days left until your birthday</h1>
+          <% end %>
+          </div>
+        </center>
+      </div>
+</html>

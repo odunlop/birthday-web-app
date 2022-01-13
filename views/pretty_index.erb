@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"
+    <title></title>
+        <title> Birthday Tracker </title>
+        <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="container">
+        <div class="menu">
+          <ul>
+            <li><a href="/" class="home-btn"><span> Home </span></a></li>
+            <li><a href="https://github.com/odunlop" class="github-btn"><span>GitHub</span></a></li>
+          </ul>
+        </div>
+        <center>
+        <div>
+          <div class="app-text">
+            <h1>Enter your birthday</h1>
+            <p><i>and find out how many days away it is...</i></p>
+            <form action="/birthday" method="post">
+              <p><label for="name">Name</label></p>
+              <p><input type="text" id="name" name="name"></p>
+              <p> Birthday </p>
+              <input type="text" id="day" name="day"</p>
+              <select name ="month" id="month">
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+              </select></p>
+              <br>
+              <input type="submit" value=" Submit ">
+            </div>
+          </div>
+        </center>
+      </div>
+  </body>
+</html>
